@@ -3,9 +3,22 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <title>Final Project</title>
-  </head>
-  <body>
     <script src="script.js"></script>
+  </head>
+  <body id = "body">
+    <script>
+      var colors = ["#00ffff", "#e6e600", "green", "#ff4d4d","#b366ff"];
+      var colorIndex = 0;
+      function changeColor() {
+          var col = document.getElementById("body");
+          if( colorIndex >= colors.length ) {
+              colorIndex = 0;
+          }
+          col.style.backgroundColor = colors[colorIndex];
+          colorIndex++;
+      }
+  </script>
+  <button onclick="changeColor();">Change color</button>
     <h1>The King Himself</h1>
     <img src = "https://lh3.googleusercontent.com/426Y0DhIvU5yf8Lp4cKy5PyElDv_3g2MQA8_Esja79jKYvekpG2PPrZCcjuOguF17x56JHI1dJvu6i4Ctg_n7Q-z0x55K6zJ7kzDuMwrrgYoo85rnBXJiQfDbBiqXuXB97cZvwqFZg=w2400" 
     alt = "Jonathon in his Natural Habitat">
